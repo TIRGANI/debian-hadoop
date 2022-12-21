@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'org.mbds'
+version '0.0.1'
+
+sourceCompatibility = 1.11
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    ext.hadoopVersion = "3.3.4"
+    compile group: 'org.apache.hadoop', name: 'hadoop-common', version: "${hadoopVersion}"
+    compile group: 'org.apache.hadoop', name: 'hadoop-client', version: "${hadoopVersion}"
+    compile group: 'org.apache.hadoop', name: 'hadoop-hdfs', version: "${hadoopVersion}"
+    compile group: 'org.apache.hadoop', name: 'hadoop-mapreduce-client-core', version: "${hadoopVersion}"
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
