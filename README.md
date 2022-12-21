@@ -1,5 +1,5 @@
 # debian-hadoop
-#Redme pour l'installer correctement:
+#Redme pour l'installer correctement Hadoop:
 # TP 1 - WordCount
 
 (Updated version from the original author: Benjamin Renaut)
